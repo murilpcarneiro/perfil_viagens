@@ -128,3 +128,14 @@ main {
     color: var(--text-secondary-color);
   }
 }
+
+.photo-gallery {
+  padding: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+
+  & img {
+    width: 100%;
+  }
+}
