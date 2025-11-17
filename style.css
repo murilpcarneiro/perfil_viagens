@@ -26,12 +26,12 @@
 
   --paragraph-md-size: 0.875rem;
   --paragraph-md-height: 170%;
-  --paragraph-md-weight: regular;
+  --paragraph-md-weight: normal;
   --paragraph-md-family: 'Poppins', sans-serif;
 
   --paragraph-sm-size: 0.75rem;
   --paragraph-sm-height: 170%;
-  --paragraph-sm-weight: regular;
+  --paragraph-sm-weight: normal;
   --paragraph-sm-family: 'Poppins', sans-serif;
 }
 
@@ -70,7 +70,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 65%;
 
   & img {
     width: 7.5rem;
@@ -101,7 +100,7 @@ main {
   & p {
     font-size: 14px;
     line-height: 170%;
-    font-weight: Regular;
+    font-weight: normal;
     font-family: 'Poppins', sans-serif;
     color: var(--text-secondary-color);
   }
@@ -189,6 +188,7 @@ footer {
   main {
     flex-direction: row;
     align-items: center;
+    max-width: 65%;
   }
 
   footer {
