@@ -53,6 +53,7 @@ header {
 
 nav {
   display: flex;
+  align-items: center;
   gap: 1rem;
 
   & #profile-pic {
@@ -69,6 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 65%;
 
   & img {
     width: 7.5rem;
@@ -133,7 +135,7 @@ main {
   padding: 1rem;
   gap: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
 
   & img {
     width: 100%;
@@ -167,5 +169,31 @@ footer {
       font-weight: var(--paragraph-md-weight);
       font-family: var(--paragraph-md-family);
     }
+  }
+}
+
+@media (max-width: 426px) {
+  #explorar,
+  #minhas-viagens {
+    display: none;
+  }
+}
+
+@media (min-width: 427px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
