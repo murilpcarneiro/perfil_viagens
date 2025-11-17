@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Produto */
+  --brand-color: #ef5f4c;
+
+  /* Shape */
+  --background-color: #ffffff;
+  --surface-color: #f5f5f5;
+  --skeleton-color: #d9d9d9;
+  --shape-transparency: rgba(255, 255, 255, 0.56);
+
+  /* Text */
+  --text-primary-color: #313131;
+  --text-secondary-color: #6c6c6c;
+
+  /* Tipografia */
+  --heading-1: 32px 125% bold 'Poppins', sans-serif;
+  --paragraph-md: 14px 170% regular 'Poppins', sans-serif;
+  --paragraph-sm: 12px 170% regular 'Poppins', sans-serif;
+}
+
+header {
+  background-color: var(--surface-color);
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+
+  & #profile-pic {
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+
+  & #search-icon {
+    width: 1.5rem;
+  }
+}
