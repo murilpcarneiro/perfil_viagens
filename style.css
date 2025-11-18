@@ -56,13 +56,32 @@ nav {
   align-items: center;
   gap: 1rem;
 
+  & a {
+    font-size: var(--paragraph-md-size);
+    color: var(--text-primary-color);
+    text-decoration: none;
+    transition: color, text-decoration 0.2s ease;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: var(--brand-color);
+    text-decoration: underline;
+  }
+
   & #profile-pic {
     width: 2.5rem;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   & #search-icon {
     width: 1.5rem;
+    cursor: pointer;
+  }
+
+  & #search-icon:hover {
+    color: var(--brand-color);
   }
 }
 
@@ -98,10 +117,10 @@ main {
   }
 
   & p {
-    font-size: 14px;
-    line-height: 170%;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
+    font-size: var(--paragraph-md-size);
+    line-height: var(--paragraph-md-height);
+    font-weight: var(--paragraph-md-weight);
+    font-family: var(--paragraph-md-family);
     color: var(--text-secondary-color);
   }
 }
@@ -167,6 +186,13 @@ footer {
       line-height: var(--paragraph-md-height);
       font-weight: var(--paragraph-md-weight);
       font-family: var(--paragraph-md-family);
+      transition: color 0.2s ease;
+    }
+
+    & a:hover,
+    & a:focus {
+      color: var(--brand-color);
+      outline: none;
     }
   }
 }
