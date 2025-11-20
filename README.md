@@ -2,6 +2,10 @@
 
 Um perfil de viajante moderno e responsivo, onde você pode compartilhar suas histórias de viagens, cultura e gastronomia pelo mundo.
 
+## Deploy
+
+https://murilpcarneiro.github.io/perfil_viagens
+
 ## 📸 Sobre o Projeto
 
 Travelgram é um projeto de portfólio que simula um perfil de rede social para viajantes. Apresenta uma interface limpa e intuitiva com galeria de fotos, informações do viajante e links de navegação.
